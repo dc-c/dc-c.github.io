@@ -1,0 +1,68 @@
+/** ************************************************************************************ **/   
+/** overwrite existing css definitions for dark/light mode ***************************** **/
+:root {
+  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "微軟雅黑體", "Microsoft YaHei", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+[data-bs-theme="dark"] .fa-stack-2x {filter: brightness(1.2);} /** circle **/
+[data-bs-theme="dark"] .fa-inverse {filter: brightness(0.1);} /** inside icon **/
+/** overwrite existing css definitions for dark/light mode ***************************** **/ 
+/** ************************************************************************************ **/   
+
+
+/** ************************************************************************************ **/  
+/** default button css definitions for dark/light mode ********************************* **/  
+.btn_default { /** copy of .btn-secondary **/
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #6c757d;
+  --bs-btn-border-color: #6c757d;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #5c636a;
+  --bs-btn-hover-border-color: #565e64;
+  --bs-btn-focus-shadow-rgb: 130, 138, 145;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #565e64;
+  --bs-btn-active-border-color: #51585e;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #6c757d;
+  --bs-btn-disabled-border-color: #6c757d;
+  filter: brightness(0.7); /** adjust to lighter/darker **/    
+}  
+
+[data-bs-theme="dark"] .btn_default {
+  filter: brightness(0.9); /** adjust to lighter/darker **/  
+}  
+
+.btn_outline_default { /** copy of .btn-outline-secondary **/
+  --bs-btn-color: #6c757d;
+  --bs-btn-border-color: #6c757d;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #6c757d;
+  --bs-btn-hover-border-color: #6c757d;
+  --bs-btn-focus-shadow-rgb: 108, 117, 125;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #6c757d;
+  --bs-btn-active-border-color: #6c757d;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #6c757d;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #6c757d;
+  --bs-gradient: none;
+  filter: brightness(1); /** adjust to lighter/darker **/    
+}  
+
+[data-bs-theme="dark"] .btn_outline_default {  
+  filter: brightness(1.2); /** adjust to lighter/darker **/  
+}  
+/** default button css definitions for dark/light mode ********************************* **/ 
+/** ************************************************************************************ **/  
+
+
+
+
+
+
+
+[data-bs-theme="dark"] .btn_theme_dark_mode .fa-moon::before {content:"\f185";}   
+ 
